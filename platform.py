@@ -15,7 +15,7 @@
 from platformio.managers.platform import PlatformBase
 
 
-class Espressif8266Platform(PlatformBase):
+class Espressif8266esphomePlatform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         if "buildfs" in targets:
