@@ -96,6 +96,7 @@ def set_tarinfo(ti):
     ti.uname = 'esphome'
     ti.gname = 'staff'
 
+prefix = names[0][prefix_len:]
 
 for member in download_tar.getmembers():
     if len(member.name) <= prefix_len:
@@ -120,7 +121,11 @@ for member in download_tar.getmembers():
             print(f"WARNING: Symbolic link {member.name}->{member.linkname} not found in archive!")
             print("===")
             raise
-        new_member.linkname = str(link_path)
+        if new_member.linkname.startswith(prefix):
+            new_member.linkname = new_member.linkname[prefix_len:]
+    elif member.islnk():
+        if new_member.linkname.startswith(prefix):
+            new_member.linkname = new_member.linkname[prefix_len:]
     elif member.isdev():
         print(f"No dev allowed! {member.name}")
         assert False
