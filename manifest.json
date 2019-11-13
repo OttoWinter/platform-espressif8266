@@ -1,0 +1,68 @@
+{
+  "framework-arduinoespressif8266": [
+    {
+      "sha1": "3e1296f47fec616c0fd306451806964ccfd08774",
+      "system": "*",
+      "url": "https://github.com/OttoWinter/esp8266-arduino/releases/download/2.6.0/framework-arduinoespressif8266-2.20600.0.tar.gz",
+      "version": "2.20600.0"
+    }
+  ],
+  "toolchain-xtensa": [
+    {
+      "sha1": "441e8ba6d376a0be7220c5faf676a7e096bad823",
+      "system": [
+        "linux_aarch64",
+        "linux_aarch64_be",
+        "linux_arm64"
+      ],
+      "url": "https://github.com/OttoWinter/esp-quick-toolchain/releases/download/v2.5.0-5/aarch64-linux-gnu.xtensa-lx106-elf-ef30488.191113.tar.gz",
+      "version": "2.50501.191113"
+    },
+    {
+      "sha1": "c54c0f4075d750287523b655caa36434b5af92ff",
+      "system": [
+        "linux_armv6l",
+        "linux_armv7l",
+        "linux_armv8l"
+      ],
+      "url": "https://github.com/OttoWinter/esp-quick-toolchain/releases/download/v2.5.0-5/arm-linux-gnueabihf.xtensa-lx106-elf-ef30488.191113.tar.gz",
+      "version": "2.50501.191113"
+    },
+    {
+      "sha1": "931656086c3b2a37d5da83f31675f3d57d660375",
+      "system": "linux_i686",
+      "url": "https://github.com/OttoWinter/esp-quick-toolchain/releases/download/v2.5.0-5/i686-linux-gnu.xtensa-lx106-elf-ef30488.191113.tar.gz",
+      "version": "2.50501.191113"
+    },
+    {
+      "sha1": "0c19cfc4b7ca79cd6dd26ca099486133d3d1b31d",
+      "system": "windows_x86",
+      "url": "https://github.com/OttoWinter/esp-quick-toolchain/releases/download/v2.5.0-5/i686-w64-mingw32.xtensa-lx106-elf-ef30488.191113.zip",
+      "version": "2.50501.191113"
+    },
+    {
+      "sha1": "d09264b2b5a6606a2e4798e08fe963f7c967208f",
+      "system": [
+        "darwin_x86_64",
+        "darwin_i386"
+      ],
+      "url": "https://github.com/OttoWinter/esp-quick-toolchain/releases/download/v2.5.0-5/x86_64-apple-darwin14.xtensa-lx106-elf-ef30488.191113.tar.gz",
+      "version": "2.50501.191113"
+    },
+    {
+      "sha1": "684c67e1ee25016b6037f05936a5c1b068e7f4ee",
+      "system": [
+        "linux_x86_64",
+        "linux_x64"
+      ],
+      "url": "https://github.com/OttoWinter/esp-quick-toolchain/releases/download/v2.5.0-5/x86_64-linux-gnu.xtensa-lx106-elf-ef30488.191113.tar.gz",
+      "version": "2.50501.191113"
+    },
+    {
+      "sha1": "55b7fef0e9e9aadbe6848ffdacd452a2765f7267",
+      "system": "windows_amd64",
+      "url": "https://github.com/OttoWinter/esp-quick-toolchain/releases/download/v2.5.0-5/x86_64-w64-mingw32.xtensa-lx106-elf-ef30488.191113.zip",
+      "version": "2.50501.191113"
+    }
+  ]
+}

@@ -248,17 +248,6 @@ AlwaysBuild(target_size)
 upload_protocol = env.subst("$UPLOAD_PROTOCOL")
 upload_actions = []
 
-# Compatibility with old OTA configurations
-if (upload_protocol != "espota"
-        and re.match(r"\"?((([0-9]{1,3}\.){3}[0-9]{1,3})|[^\\/]+\.local)\"?$",
-                     env.get("UPLOAD_PORT", ""))):
-    upload_protocol = "espota"
-    sys.stderr.write(
-        "Warning! We have just detected `upload_port` as IP address or host "
-        "name of ESP device. `upload_protocol` is switched to `espota`.\n"
-        "Please specify `upload_protocol = espota` in `platformio.ini` "
-        "project configuration file.\n")
-
 if upload_protocol == "espota":
     if not env.subst("$UPLOAD_PORT"):
         sys.stderr.write(
