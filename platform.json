@@ -20,16 +20,16 @@
   ],
   "frameworks": {
     "arduino": {
-      "package": "framework-arduinoespressif8266",
+      "package": "framework-arduinoespressif8266-esphome",
       "script": "builder/frameworks/arduino.py"
     }
   },
   "packages": {
-    "toolchain-xtensa": {
+    "toolchain-xtensa-esphome": {
       "type": "toolchain",
-      "version": "~2.50501.0"
+      "version": "~1.2050005.0"
     },
-    "framework-arduinoespressif8266": {
+    "framework-arduinoespressif8266-esphome": {
       "type": "framework",
       "version": "~2.20600.0"
     },
