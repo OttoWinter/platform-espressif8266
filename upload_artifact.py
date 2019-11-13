@@ -120,6 +120,7 @@ for member in download_tar.getmembers():
             print(f"WARNING: Symbolic link {member.name}->{member.linkname} not found in archive!")
             print("===")
             raise
+        new_member.linkname = str(link_path)
     elif member.isdev():
         print(f"No dev allowed! {member.name}")
         assert False
@@ -137,7 +138,7 @@ if args.description is not None:
     package_json['description'] = args.description
 if args.description_url is not None:
     package_json['url'] = args.description_url
-package_json = json.dumps(package_json, indent=4)
+package_json = json.dumps(package_json, indent=4, sort_keys=True)
 print(package_json)
 
 package_json = package_json.encode()
@@ -175,6 +176,7 @@ with open('manifest.json', 'r') as manifest_json:
     manifest = json.load(manifest_json)
 
 manifest_obj = manifest.pop(args.name, [])
+manifest_obj = [obj for obj in manifest_obj if obj['version'] == version]
 manifest[args.name] = manifest_obj
 print("Updating manifest.json")
 manjs = {
@@ -187,7 +189,7 @@ print(manjs)
 manifest_obj.append(manjs)
 
 with open('manifest.json', 'w') as manifest_json:
-    json.dump(manifest, manifest_json, indent=2)
+    json.dump(manifest, manifest_json, indent=2, sort_keys=True)
 
 download_file.close()
 result_file.close()

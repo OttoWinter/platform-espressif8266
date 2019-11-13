@@ -1,4 +1,12 @@
 {
+  "framework-arduinoespressif8266-esphome": [
+    {
+      "sha1": "87f0981f13e3b52535e2864d0116e598ac014d4a",
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/framework-arduinoespressif8266-esphome-v1.20600.191113.tar.gz",
+      "system": "*",
+      "version": "1.20600.191113"
+    }
+  ],
   "toolchain-xtensa-esphome": [
     {
       "sha1": "d1b3462510ea6ec4e2ca20c40557852f1ef754bb",
@@ -33,15 +41,6 @@
       "version": "1.2050005.191113"
     },
     {
-      "sha1": "75d2daf845e03ca7efa1104cbbb9f1798ff71c17",
-      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-esphome-darwin_x86_64-v1.2050005.191113.tar.gz",
-      "system": [
-        "darwin_x86_64",
-        "darwin_i386"
-      ],
-      "version": "1.2050005.191113"
-    },
-    {
       "sha1": "8ace0867d9c3e2f581a162f9eb3c6038d90ded3a",
       "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-esphome-linux_x86_64-v1.2050005.191113.tar.gz",
       "system": [
@@ -55,14 +54,15 @@
       "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-esphome-windows_amd64-v1.2050005.191113.tar.gz",
       "system": "windows_amd64",
       "version": "1.2050005.191113"
-    }
-  ],
-  "framework-arduinoespressif8266-esphome": [
+    },
     {
-      "sha1": "87f0981f13e3b52535e2864d0116e598ac014d4a",
-      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/framework-arduinoespressif8266-esphome-v1.20600.191113.tar.gz",
-      "system": "*",
-      "version": "1.20600.191113"
+      "sha1": "e18dc028cd7401cab8668fe8a97dec7bb4a067e2",
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-esphome-darwin_x86_64-v1.2050005.191113.tar.gz",
+      "system": [
+        "darwin_x86_64",
+        "darwin_i386"
+      ],
+      "version": "1.2050005.191113"
     }
   ]
 }
