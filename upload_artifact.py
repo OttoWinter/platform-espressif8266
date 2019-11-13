@@ -143,7 +143,7 @@ if args.description is not None:
     package_json['description'] = args.description
 if args.description_url is not None:
     package_json['url'] = args.description_url
-package_json = json.dumps(package_json, indent=4, sort_keys=True)
+package_json = json.dumps(package_json, indent=2, sort_keys=True)
 print(package_json)
 
 package_json = package_json.encode()
@@ -181,7 +181,7 @@ with open('manifest.json', 'r') as manifest_json:
     manifest = json.load(manifest_json)
 
 manifest_obj = manifest.pop(args.name, [])
-manifest_obj = [obj for obj in manifest_obj if obj['version'] == version]
+manifest_obj = [obj for obj in manifest_obj if (obj['system'] != system_var and obj['version'] != version)]
 manifest[args.name] = manifest_obj
 print("Updating manifest.json")
 manjs = {
