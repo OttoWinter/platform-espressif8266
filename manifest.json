@@ -1,4 +1,12 @@
 {
+  "framework-arduinoespressif8266": [
+    {
+      "sha1": "e570bb3a6060a0624e69df2ce9fa223f61defcdd",
+      "system": "*",
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/framework-arduinoespressif8266-v1.20600.191113.tar.gz",
+      "version": "1.20600.191113"
+    }
+  ],
   "framework-arduinoespressif8266-esphome": [
     {
       "sha1": "87f0981f13e3b52535e2864d0116e598ac014d4a",
