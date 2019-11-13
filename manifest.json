@@ -1,7 +1,7 @@
 {
   "framework-arduinoespressif8266": [
     {
-      "sha1": "e570bb3a6060a0624e69df2ce9fa223f61defcdd",
+      "sha1": "1d403ca41995042d97c64f59fa38baadb6326c2a",
       "system": "*",
       "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/framework-arduinoespressif8266-v1.20600.191113.tar.gz",
       "version": "1.20600.191113"
@@ -13,6 +13,55 @@
       "system": "*",
       "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/framework-arduinoespressif8266-esphome-v1.20600.191113.tar.gz",
       "version": "1.20600.191113"
+    }
+  ],
+  "toolchain-xtensa": [
+    {
+      "sha1": "b113807ddafae0694df354bdb5f9c8d399c0292b",
+      "system": [
+        "linux_x86_64",
+        "linux_x64"
+      ],
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-linux_x86_64-v1.2050005.191113.tar.gz",
+      "version": "1.2050005.191113"
+    },
+    {
+      "sha1": "eb5fb6c54afe06b4e9db9e52c8b04136d1403b98",
+      "system": "windows_amd64",
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-windows_amd64-v1.2050005.191113.tar.gz",
+      "version": "1.2050005.191113"
+    },
+    {
+      "sha1": "ae60994a2d732b126fd8e6c367c69b1873731500",
+      "system": [
+        "linux_aarch64",
+        "linux_aarch64_be",
+        "linux_arm64"
+      ],
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-linux_aarch64-v1.2050005.191113.tar.gz",
+      "version": "1.2050005.191113"
+    },
+    {
+      "sha1": "f939a8f91f6656b420ecd46806525d1d07f9cd9b",
+      "system": [
+        "linux_armv6l",
+        "linux_armv7l",
+        "linux_armv8l"
+      ],
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-linux_armv6l-v1.2050005.191113.tar.gz",
+      "version": "1.2050005.191113"
+    },
+    {
+      "sha1": "42c382c3a278f925b3eb1581cdf59fad238ed061",
+      "system": "linux_i686",
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-linux_i686-v1.2050005.191113.tar.gz",
+      "version": "1.2050005.191113"
+    },
+    {
+      "sha1": "2ab979e32dcc823d02c534f82cdb2bca25d7218a",
+      "system": "windows_x86",
+      "url": "https://github.com/OttoWinter/platform-espressif8266/releases/download/v2.3.0/toolchain-xtensa-windows_x86-v1.2050005.191113.tar.gz",
+      "version": "1.2050005.191113"
     }
   ],
   "toolchain-xtensa-esphome": [
